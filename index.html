@@ -76,30 +76,38 @@
                         <form class="modal-form" name="form-order-service">
                             <h2 class="title title-form">Оставьте свои данные, мы вам перезвоним</h2>
                             <div class="input-container">
-                                <input class="input-form" type="text" id="name" name="user-name" minlength="3" checked>
+                                <input class="input-form" type="text" id="name" name="user-name" placeholder=" "
+                                    minlength="3" checked>
                                 <label class="label-form" for="name">Имя</label>
                                 <svg class="input-icon" width="18" height="18" for="name">
                                     <use href="./images/icon/sprite-form.svg#person"></use>
                                 </svg>
                             </div>
                             <div class="input-container">
-                                <input class="input-form" type="tel" id="phone" name="user-phone">
+                                <input class="input-form" type="tel" id="phone" name="user-phone" placeholder=" ">
                                 <label class="label-form" for="phone">Телефон</label>
                                 <svg class="input-icon" width="18" height="18" for="phone">
                                     <use href="./images/icon/sprite-form.svg#phone"></use>
                                 </svg>
                             </div>
                             <div class="input-container">
-                                <input class="input-form" type="email" id="email" name="user-email">
+                                <input class="input-form" type="email" id="email" name="user-email" placeholder=" ">
                                 <label class="label-form" for="email">Почта</label>
                                 <svg class="input-icon" width="18" height="18" for="email">
                                     <use href="./images/icon/sprite-form.svg#emai"></use>
                                 </svg>
                             </div>
+                            <div class="textarea-container">
+                                <label class="label-form-comment" for="comment">Комментарий</label>
+                                <textarea class="textarea-form-comment" id="comment" name="viewport"
+                                    placeholder="Введите текст"></textarea>
+                            </div>
+                            <div class="checkbox-container">
+                                <input class="form-checkbox" type="checkbox">
+                                <p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+                            </div>
 
-                            <label class="label-form-comment" for="comment">Комментарий</label>
-                            <textarea class="textarea-form-comment" id="comment" name="viewport"
-                                placeholder="Введите текст"></textarea>
+                            <button type="submit">Отправить</button>
 
 
                         </form>

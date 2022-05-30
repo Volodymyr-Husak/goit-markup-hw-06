@@ -323,16 +323,18 @@ img {
 
 .footer-container {
     display: flex;
+    justify-content: space-between;
+
 }
 
 .footer-container-address {
-    margin-right: 70px;
+    /* margin-right: 70px; */
 }
 
 /* social-networks */
 .social-networks-footer {
     margin-top: 12px;
-    margin-right: 93px;
+    /* margin-right: 93px; */
     /* align-items: baseline; */
 }
 
@@ -650,8 +652,10 @@ img {
     display: block;
     text-align: start;
     position: absolute;
-    top: 13px;
+    /* top: 13px; */
     left: 42px;
+    top: 50%;
+    transform: translateY(-50%);
 
     cursor: pointer;
 
@@ -694,7 +698,7 @@ img {
 .input-form:focus~.label-form,
 .input-form:not(:placeholder-shown)~.label-form {
 
-    transform: translate(-42px, -31px);
+    transform: translate(-42px, -37px);
 
 }
 

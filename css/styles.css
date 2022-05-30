@@ -382,9 +382,10 @@ img {
 
 /* footer-form */
 .footer-form {
-    display: block;
+    display: inline-block;
 
     margin-top: 12px;
+    height: 92px;
 }
 
 .label-footer {

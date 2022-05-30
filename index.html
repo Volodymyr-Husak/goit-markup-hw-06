@@ -102,12 +102,19 @@
                                 <textarea class="textarea-form-comment" id="comment" name="viewport"
                                     placeholder="Введите текст"></textarea>
                             </div>
-                            <div class="checkbox-container">
-                                <input class="form-checkbox" type="checkbox">
-                                <p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
-                            </div>
+                            <!-- Політика приватності (чекбокс) -->
+                            <label class="form-policy-group">
+                                <input class="checkbox" type="checkbox" name="form-policy">
+                                <span class="custom-checkbox">
+                                    <svg class="custom-checkbox-icon" width="16" height="15">
+                                        <use href="./images/icon/sprite-form.svg#iconcheck"></use>
+                                    </svg>
+                                </span>
+                                Соглашаюсь с рассылкой и принимаю
+                                <a class="contract-form" href=""> Условия договора</a>
+                            </label>
 
-                            <button type="submit">Отправить</button>
+                            <button class="form-btn" type="submit">Отправить</button>
 
 
                         </form>

@@ -388,7 +388,7 @@ img {
 }
 
 .label-footer {
-    display: block;
+    display: inline-block;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -413,6 +413,9 @@ img {
     margin-right: 12px;
 
     color: var(--link-contact-footer);
+
+    font-size: 16px;
+    line-height: 1.25;
 }
 
 /* .input-footer:checked {
@@ -428,12 +431,41 @@ img {
 }
 
 .footer-btn-form {
-    /* display: flex; */
+    display: flex;
+    align-items: center;
     padding: 10px 28px;
-    width: 200px;
-    height: 50px;
+    /* width: 200px; */
+    /* height: 50px; */
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    background-color: var(--blue-color);
+    color: var(--white-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    transition: background-color var(--fast-time) var(--easy-in-out);
 }
 
+.footer-btn-form:focus,
+.footer-btn-form:hover {
+    background-color: var(--bg-cl-hero-btn-hover);
+}
+
+.footer-btn-icon-form {
+    margin-left: 10px;
+}
+
+.input-btn-form-footer {
+    display: flex;
+}
 
 
 /* =============================================== */
@@ -588,6 +620,13 @@ img {
     height: 30px;
 
     background-color: var(--white-color);
+
+    transition: fill var(--fast-time) var(--easy-in-out);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    fill: var(--blue-color);
 }
 
 /* modal-form */
